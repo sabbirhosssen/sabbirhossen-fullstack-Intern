@@ -1,0 +1,31 @@
+.header_background {
+  background-color: #f4f5fa;
+  width: 100%;
+}
+.header-icon {
+  border: 4px solid #1f33d8;
+  border-radius: 100%;
+  padding: 3px;
+}
+.header_title_font {
+  font-style: normal;
+  font-family: Lato;
+  font-size: 32px;
+  line-height: 32px;
+  color: #0e133a;
+}
+.header_title_font_span {
+  font-style: normal;
+  font-family: Lato;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1f33d8;
+}
+
+.header_font {
+  font-style: normal;
+  font-family: Lato;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0e133a;
+}
