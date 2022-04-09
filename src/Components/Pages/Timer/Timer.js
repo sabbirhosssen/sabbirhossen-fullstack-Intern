@@ -4,15 +4,12 @@ import CountUp from 'react-countup';
 const Timer = () => {
 
     window.addEventListener('scroll',()=>{
-        const scrollable = document.documentElement.scrollIntoView
-        console.log(scrollable);
+        const scrollable = document.documentElement.scrollHeight
+        // console.log(scrollable);
         const scrolled =window.scrollY
-        console.log(Math.ceil(scrolled));
-        if (Math.ceil(scrolled)=== 335 && Math.ceil(scrolled)=== 337 ) {
-            alert('hi')
+        if (Math.ceil(scrolled)=== scrollable ){
+            console.log('hi')
             
-        }else{
-
         }
     })
 
@@ -28,7 +25,7 @@ const Timer = () => {
                 <div className="">
                     <h6 className='text-white'>Transactions/Second</h6>
                     <div className='d-flex fs-1 text-white'> <span>$</span>
-                    <CountUp start={0} end={2905} delay={0} duration={5}>
+                    <CountUp start={0} end={2905} delay={0} duration={1}>
                         
                          {({ countUpRef }) => 
                           <div className='fs-1 text-white'>
@@ -41,7 +38,7 @@ const Timer = () => {
                 <div className="text-start">
                     <h6 className='text-white'>Total Transactions</h6>
                    <div className='d-flex fs-1 text-white'> <span>$</span>
-                    <CountUp start={0} end={64540470129} delay={0} duration={5}>
+                    <CountUp start={0} end={64540470129} delay={0} duration={1}>
                         
                          {({ countUpRef }) => 
                           <div className='fs-1 text-white'>
@@ -54,7 +51,7 @@ const Timer = () => {
                 <div className="">
                     <h6 className='text-white '>Avg. Cost/Transaction</h6>
                     <div className='d-flex fs-1 text-white'> <span>$0,000</span>
-                    <CountUp start={0} end={25} delay={0} duration={4}>
+                    <CountUp start={0} end={25} delay={0} duration={1}>
                         
                          {({ countUpRef}) => 
                           <div className='fs-1 text-white'>
@@ -65,9 +62,9 @@ const Timer = () => {
                     </CountUp></div>
                 </div>
                 <div className="">
-                    <h6 className='text-white'>Validator Nodes</h6>
-                    <div className='d-flex fs-1 text-white'> <span>$</span>
-                    <CountUp start={0} end={1645} delay={0} duration={5}>
+                    <h6 className='text-white fs-lg-6'>Validator Nodes</h6>
+                    <div className='d-flex fs-1  text-white'> <span>$</span>
+                    <CountUp start={0} end={1645} delay={0} duration={1}>
                         
                          {({ countUpRef }) => 
                           <div className='fs-1 text-white'>
