@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { AiOutlineInstagram } from "react-icons/ai";
+import { BsDiscord, BsFacebook, BsGithub } from "react-icons/bs";
 const Footer = () => {
 
     // styles 
@@ -41,7 +42,23 @@ const Footer = () => {
                        <span style= {style_title}>AkA</span>
                        <span style={style_titles}>.COIN</span>
                     </div>
-                    <a href='d' className='text-start text-decoration-none text-dark mt-5'>Living Ecosystem <br/> Decentralized Token</a>
+                    <h5  className=' text-decoration-none text-dark mt-2' style={style_h5_color}>Living Ecosystem <br/> Decentralized Token</h5>
+
+                    <div className="kk">
+                        <a href="d" className='text-decoration-none fs-3  me-2' style={style_h5_color}>
+                            <BsGithub/>
+                        </a>
+                        <a href="d"  className='text-decoration-none fs-3 me-2 ' style={style_h5_color}>
+                            <BsDiscord/>
+                        </a>
+                        <a href="d"  className='text-decoration-none fs-3 me-2' style={style_h5_color}>
+                            <BsFacebook/>
+                        </a>
+                        <a href="d"  className='text-decoration-none fs-3 ' style={style_h5_color}>
+                            <AiOutlineInstagram/>
+                        </a>
+                    </div>
+
                 </div>
                 <div className="d-flex flex-row gap-5 justify-content-between align-items-stretch mt-4">
                     <div className='w-25 text-start d-flex  flex-column gap-3 ms-2 me-2'>
