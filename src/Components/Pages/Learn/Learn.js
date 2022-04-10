@@ -1,20 +1,24 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import Learns from './Learns';
 
 const Learn = () => {
+    const detail_h={
+        color:"#0E133A",
+        fontSize:"48px",
+        FontWeight:"700",
+        LineHeight:"58px"
+    }
     return (
-        <div className=''>
-            <div className="pt-5">
-                <h2>Learn</h2>
-                <div>
-                    <img src="https://i.ibb.co/Y2SkBDD/Plant-Bitcoin.png" alt="" />
-                   
-
-                    <h2>hi   </h2>
-                    <Image src='https://ibb.co/K6gqxNN' alt=''></Image>
-                    
-                </div>
-            </div>
+        <div className='m-lg-5'>
+             <h2 className='text-center' style={detail_h}>What Is Akacoin?</h2>
+           <Row xs={1} md={2} className="g-4">
+               <Learns/>
+               <Learns/>
+               <Learns/>
+               <Learns/>
+  
+          </Row>
         </div>
     );
 };

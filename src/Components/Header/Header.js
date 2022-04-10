@@ -20,7 +20,9 @@ const Header = () => {
              <Nav.Link as={Link} to="/intro" className='header_font '>Ecosystem</Nav.Link>
              <Nav.Link as={Link} to="/intro"  className='header_font'>Buy</Nav.Link>
              <Nav.Link as={Link} to="/intro"  className='header_font'>What is AKO?</Nav.Link>
-             <Nav.Link as={Link} to="/intro" className='header_font'>Learn</Nav.Link>
+             <Nav.Link as={Link} to="/intro" className='header_font'>
+               Learn
+               </Nav.Link>
              <Nav.Link as={Link} to="/intro"  className='header_font'>Community</Nav.Link>
              <NavDropdown 
              title={<GrLanguage className='header_font'/>} 

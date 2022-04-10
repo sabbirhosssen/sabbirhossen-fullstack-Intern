@@ -11,7 +11,7 @@ const Introduction = () => {
         lineHeight: '100px'
     }
     const style_h={
-        height:"100vh",
+        height:"100%",
         background: ' #F4F5FA'
     }   
     
