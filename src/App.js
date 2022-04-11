@@ -1,7 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Admin from './Components/Admin/Admin';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
+import Login from './Components/Login/Login';
 import Coummunity from './Components/Pages/Community/Coummunity';
 import Details from './Components/Pages/Details/Details';
 import Home from './Components/Pages/Home';
@@ -19,6 +21,8 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/community" element={<Coummunity />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin/*" element={<Admin/>}/>
       </Routes> 
     <Footer/>
     </div>

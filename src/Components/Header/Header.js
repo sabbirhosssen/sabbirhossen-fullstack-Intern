@@ -1,11 +1,13 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { GrLanguage } from "react-icons/gr";
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import useFirebase from '../../Hook/useFirebase';
 import "./Header.css";
 const Header = () => {
+  const {user, logOut}=useFirebase()
   
-
+console.log(user);
     return (
         <div className='navbar '>
             <Navbar collapseOnSelect expand="lg"  className="header_background py-3 border-bottom">
@@ -30,8 +32,15 @@ const Header = () => {
              align={{ lg: 'end' }} 
              id="dropdown-menu-align-responsive-1" 
              className=''>
+               {user?.email ?
+                              <Image  className=" rounded-circle mt-2" width="50px" height="50px" src= {user.photoURL}  ></Image>:<Outlet/>
+
+                        }
+               {user?.email ?
+                            <Button onClick={logOut} className="border-0  bg-success hover  mt-2 me-2 text-white" >Logout</Button> :
                <NavDropdown.Item as={Link} to="/login" className='header_font'>Login</NavDropdown.Item>
-               <NavDropdown.Item as={Link} to="/signup" className='header_font'>Sign up</NavDropdown.Item>
+            }
+               <NavDropdown.Item as={Link} to="/admin" className='header_font'>Admin</NavDropdown.Item>
               
                {/* <NavDropdown.Divider /> */}
                
