@@ -7,7 +7,7 @@ const Introduction = () => {
         fontFamily: 'Lato',
         fontStyle: 'normal',
         fontWeight: '700',
-        fontSize: '72px',
+        fontSize: '300%',
         lineHeight: '100px'
     }
     const style_h={
@@ -27,7 +27,7 @@ const Introduction = () => {
                         Decentralized Token
                     </h1>
                     <div>
-                        <small>
+                        <small className='w-100'>
                         Akacoin is a open
                         source peer-to-peer digital currency,community-run technology that <br/>
                         supports cryptocurrencies and thousands of decentralized applications.
@@ -37,7 +37,7 @@ const Introduction = () => {
                     <Button className='rounded-pill'> Get Started</Button>
                     <Button className='bg-white ms-3 text-dark text-center rounded-pill'> <BsGithub/> Source</Button>
                 </div>
-                <div className='fh ' >
+                <div className='' >
                    
                    <img src="https://i.ibb.co/Y2SkBDD/Plant-Bitcoin.png" alt="" />
                 </div>

@@ -1,16 +1,22 @@
 import React from 'react';
 import { Col, Image } from 'react-bootstrap';
-const Learns = () => {
+const Learns = ({id_,title,text,img}) => {
+    const bg_g={
+        background: '#FFD456'
+
+    }
     return (
         <div>
             <Col>
       <div  className='d-flex justify-content-center align-items-center'>
-        <Image variant="" src="https://i.ibb.co/Y2SkBDD/Plant-Bitcoin.png" width="50%" height="100%" />
-        <div>
-          <h3>Card title</h3>
+          <div  className=' rounded-pill  mx-2 ' style={bg_g}>
+          <Image variant="" src={img}width="100%" height="100%" />
+          </div>
+        
+        <div className='text-start'>
+          <h4>{id_} . {title}</h4>
           <small>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
+            {text}
           </small>
         </div>
       </div>

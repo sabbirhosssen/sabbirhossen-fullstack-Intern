@@ -1,14 +1,15 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { GrLanguage } from "react-icons/gr";
 import { Link } from 'react-router-dom';
 import "./Header.css";
 const Header = () => {
+  
 
     return (
         <div className='navbar '>
             <Navbar collapseOnSelect expand="lg"  className="header_background py-3 border-bottom">
-         <Container>
+         
            
          <Navbar.Brand as={Link} to="/" className='header_title_font'>
          <svg className='me-2 header-icon' width="36" height="36" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,12 +19,12 @@ const Header = () => {
          <Navbar.Collapse id="responsive-navbar-nav " className='collapse'>
            <Nav className="ms-auto menu">
              <Nav.Link as={Link} to="/intro" className='header_font '>Ecosystem</Nav.Link>
-             <Nav.Link as={Link} to="/intro"  className='header_font'>Buy</Nav.Link>
-             <Nav.Link as={Link} to="/intro"  className='header_font'>What is AKO?</Nav.Link>
-             <Nav.Link as={Link} to="/intro" className='header_font'>
+             <Nav.Link as={Link} to="/buy"  className='header_font'>Buy</Nav.Link>
+             <Nav.Link as={Link} to="/details"  className='header_font'>What is AKO?</Nav.Link>
+             <Nav.Link as={Link} to="/learn" className='header_font'>
                Learn
                </Nav.Link>
-             <Nav.Link as={Link} to="/intro"  className='header_font'>Community</Nav.Link>
+             <Nav.Link as={Link} to="/community"  className='header_font'>Community</Nav.Link>
              <NavDropdown 
              title={<GrLanguage className='header_font'/>} 
              align={{ lg: 'end' }} 
@@ -39,7 +40,7 @@ const Header = () => {
            <Nav>
            </Nav>
          </Navbar.Collapse>
-         </Container>
+         
         </Navbar>
         </div>
     );
